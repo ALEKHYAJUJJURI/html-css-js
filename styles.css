@@ -1,0 +1,62 @@
+aside span{
+    color: rgb(255,255,254);
+}
+aside{
+    width: 50px;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20,20,20,0.6);
+}
+main{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+iframe{
+    border: none;
+    
+}
+.kids{
+    display: flex;
+    gap: 10px;
+}
+.card{
+    border: 1px solid gray;
+    padding: 10px;
+}
+ul{
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    height: 100vh;
+    margin-top: -25px;
+}
+ul li{
+    background-color: aqua;
+    margin: 3px;
+    text-align: center;
+}
+table{
+    padding: 10px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 5px gray;
+   
+}
+
+
+div img{
+    border:2px solid aqua;
+    transition-duration: 2s;
+    transition-timing-function: steps(4);
+}
+div img:hover{
+    transition-duration: 3s;
+    transition-timing-function: steps(5);
+    transition-delay: 2s;
+    border: 5px solid greenyellow;
+    width: 300px;
+    height: 300px;
+}

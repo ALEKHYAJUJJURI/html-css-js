@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link href="images/logo-A.avif" rel="shortcut icon"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" href="images/logo-A.avif"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="con p-3">
+        <header class="text-center">Fashion</header>
+       <main>
+        <div>
+            <nav>
+                <ul type="none">
+                    <li><a href="kids.html" target="frame">Kid's Fashion</a></li>
+                    <li><a href="mens.html" target="frame">Men's Fashion</a></li>
+                    <li><a href="womens.html" target="frame">Women's Fashion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+          <iframe width="100%" name="frame" height="300"></iframe>
+        </div>
+       
+       </main>
+       <div>
+        <table>
+            <caption>Table</caption>
+            <tr style="border: 1px solid gray;">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Skype</th>
+                <th>Phone No</th>
+            </tr>
+            <tr>
+                <td>Alekhya</td>
+                <td><a href="mailto:alekhya@gmail.com"> alekhya@gmail.com</a></td>
+                <td><a href="skype:alekhya@outlook.com"> alekhya@outlook.com</a></td>
+                <td><a href="tel:+917075685295"> 7075685295</a></td>
+            </tr>
+            <tr>
+                <td>Alekhya</td>
+                <td><a href="mailto:alekhya@gmail.com">alekhya@gmail.com</a></td>
+                <td><a href="skype:alekhya@outlook.com">alekhya@outlook.com</a></td>
+                <td><a href="tel:+917075685295">7075685295</a></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <form>
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text" placeholder="username" pattern="(?=.*[A-Z]){4,}"/></dd>
+                <dt>Password</dt>
+                <dd><input type="password" placeholder="password" pattern="(?=.*[A-Z])[\w\W]{5,20}"/></dd>
+                <dt>Chooste Date</dt>
+                <dd><input type="date" min="2023-12-12" max="2024-08-09"/></dd>
+                <dt>Range</dt>
+                <dd><input type="range" value="30" min="10" max="100"/></dd>
+               <dt>Color</dt>
+               <dd><input type="color" class="form-control-color"/></dd>
+                <dt>Choose Photo</dt>
+                <dd><input type="file" name="photo" accept=".jpg" multiple /></dd>
+               
+            </dl>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div>
+        <h2>Buttons</h2>
+        <dl>
+            <dt>Bootstrap buttons</dt>
+            <dd>
+                <button class="btn btn-success btn-sm">Click</button>
+                <button class="btn btn-primary">Add</button>
+                <button class="btn btn-lg btn-outline-danger">Delete</button>
+            </dd>
+            <dt>btn Toolbar</dt>
+            <dd class="btn-toolbar bg-danger d-flex justify-content-between">
+               <div class="btn-group">
+                <button class="btn btn-danger">Click</button>
+                <button class="btn btn-danger">Add</button>
+                <button class="btn btn-danger">Delete</button>
+               </div>
+               <div class="btn-group">
+                <button class="btn btn-danger bi bi-alarm-fill"></button>
+                <button class="btn btn-danger bi bi-arrow-90deg-right"></button>
+                <button class="btn btn-danger bi bi-trash-fill"></button>
+               </div>
+            </dd>
+            <dt>Special btns</dt>
+            <dd>
+                <button class="btn btn-close"></button>
+                <button class="btn btn-link">login</button>
+            
+            </dd>
+            <dt>Button btn-outline</dt>
+            <dd>
+                <button class="btn btn-outline-danger bi bi-trash-fill"></button>
+                <button class="btn btn-outline-success bi bi-save"></button>
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <marquee scrollamount="10" bgcolor="yellow" loop="3" behaviour="" direction="right" >
+            <!--marquee scrollamount="10" bgcolor="yellow" loop="3" behaviour="alternate" direction="right onmouseover="this.stop() onmouseout="this.start()"-->
+            <img src="images/image_2.jpg" width="100"/>
+            <img src="images/image_3.jpg" width="100"/>
+            <img src="images/image_4.jpg" width="100"/>
+            <img src="images/image_5.jpg" width="100"/>
+        </marquee>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;" >
+        <img src="images/logo-A.avif" width="150" height="150"/>
+    </div>
+    </div>
+</body>
+</html>

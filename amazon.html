@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/a-logo.png"/>
+    <title>Document</title>
+    <style>
+        form{
+            width: 400px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="d-flex flex-row justify-content-center">
+        <div>
+            <div class="text-center">
+                <img src="images/amazon-logo.png"  width="110"/>.in
+            </div>
+            <form class="form border p-3 rounded-3">
+                <h2 class="h2">Create Account</h2>
+                <dl>
+                    <dt class="form-label">Your name</dt>
+                    <dd><input type="text" placeholder="First and last name" class="form-control"/></dd>
+                    <dt class="form-label">Mobile number</dt>
+                    <dd class="d-flex justify-content-between">
+                        <div class="border rounded ">
+                            <span class="p-2">IN +91 <span class="bi bi-arrow-bar-down"></span></span>
+                        </div>
+                        <div class="">
+                            <input type="number" class="form-control"/>
+                        </div>
+                    </dd>
+                    <dt class="form-label">Password</dt>
+                    <dd><input type="password" class="form-control" placeholder="At least 6 characters"/></dd>
+                    <dd class="form-control-plaintext">To verify your number, we will send you a text message with a temporary code. Message and data rates may apply.</dd>
+                    <button class="btn btn-warning w-100">Verify mobile number</button>
+                </dl>
+                <hr/>
+                <div class="mb-4">
+                    <span class="fw-bold">Buying for work?</span><br/>
+                    <span class="text-primary">Create a free business account</span>
+                </div>
+                <div class="mb-4">
+                    <span>
+                        Already have an account?<span class="text-primary"> Sign in <span class="bi bi-chevron-right"></span></span></span>
+                </div>
+                <div>
+                    <span>By creating an account or logging in, you agree to Amazon’s <a href="">Conditions of Use</a> and <a href="">Privacy Policy</a>.</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

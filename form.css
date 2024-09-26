@@ -1,0 +1,59 @@
+.element-state-pseduo-class{
+    display: flex;
+    justify-content: center;
+}
+textarea:read-only{
+    cursor: not-allowed;
+}
+.data-list{
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 7px;
+}
+.name+div{
+    display: none; 
+}
+.name:focus+div{
+   display: block;
+    color: brown;
+}
+button:disabled{
+    background-color: bisque;
+    cursor: not-allowed; 
+    border-radius: 8px;
+    border: 0;
+    padding: 6px;
+}
+.terms input+span{
+    color: brown;
+}
+.terms input:checked+span{
+   color: green;
+}
+.email div{
+    display: none;
+}
+.email input:focus+div{
+display: block;
+color: brown;
+}
+.num:in-range+span{
+    display: none;
+} 
+.num:out-of-range+span{
+    display: block;
+    color: brown;
+}
+.passwood:focus::before+div{
+    display: none;
+
+}
+.passwood+div{
+    display:none;
+}
+
+.passwood:invalid+div{
+    display: block;
+    color: brown;
+
+}
