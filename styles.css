@@ -47,12 +47,12 @@ table{
 }
 
 
-div img{
+.img img{
     border:2px solid aqua;
     transition-duration: 2s;
     transition-timing-function: steps(4);
 }
-div img:hover{
+.img img:hover{
     transition-duration: 3s;
     transition-timing-function: steps(5);
     transition-delay: 2s;
@@ -60,3 +60,96 @@ div img:hover{
     width: 300px;
     height: 300px;
 }
+.inheritence{
+    border: 2px double hsl(355,30%,70%);
+    padding: 10px;
+    color: hsl(120, 50%, 50%);
+    margin: 10px;
+}
+
+.para{
+    border: inherit;
+    padding: inherit;
+    margin: 15px;
+    color: initial;
+}
+.head{
+    font-weight: unset;
+    
+    font-size: unset;
+}
+.border-img{
+    border: 20px solid transparent;
+    border-image: url(images/paint2.gif) space 40;
+    border-radius: 7px;
+    
+}
+.count{
+    background-color: brown;
+    border-radius: 10px;
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.bg-info{
+    position: relative;
+}
+
+.text-white{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.perf-img{
+    width: 400px;
+    border: 1px dotted hsl(355,30%,70%);
+    position: relative;
+}
+.stick{
+    
+}
+.stick:first-child{
+    color: rgb(0,10,250);
+    border: 1px solid red;
+    padding: 5px;
+}
+.stick p:first-child{
+    color: rgb(250, 92, 0);
+    border: 1px solid rgb(73, 88, 200);
+    padding: 20px;
+}
+.stick p::selection{
+    background-color: rgb(223, 182, 121);
+    color: brown;
+}
+.heading{
+    background-color: black;
+    
+    color: blanchedalmond;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+.z-index div{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+}
+.card-b{
+margin: 180px;
+z-index: 0;
+}
+.card-r{
+margin: 140px;
+z-index: 2;
+}
+.card-g{
+ z-index: 1; 
+ margin: 100px;  
+}
+.card-footer{
+    font-size: 10px;
+}
+
