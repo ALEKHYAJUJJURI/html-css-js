@@ -21,7 +21,7 @@
        <main>
         <div>
             <nav>
-                <ul type="none">
+                <ul type="none" class="ul">
                     <li><a href="kids.html" target="frame">Kid's Fashion</a></li>
                     <li><a href="mens.html" target="frame">Men's Fashion</a></li>
                     <li><a href="womens.html" target="frame">Women's Fashion</a></li>
@@ -178,6 +178,170 @@
         </div>
         <div class="card-g bg-success rounded"></div>
     </div>
+   <div class="">
+    <h3>Alerts cards</h3>
+    <div class="alert alert-danger alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <h1 class="">Hello</h1>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque porro sit distinctio culpa, repudiandae nesciunt quos, sint minus quae beatae? Error voluptas nam similique mollitia, officiis consequatur aliquam corrupti.</p>
+        <a class="alert-link" href="">Help</a>
     </div>
+    <div class="alert alert-success alert-dismissible">
+        
+        <h1 class="">Success Msg</h1>
+        <p class="">Successfully saved the details</p>
+        <a class="alert-link" href="">Help</a><br/>
+        <button class="btn btn-success" data-bs-dismiss="alert">save</button>
+    </div>
+   </div>
+   <button class="btn btn-primary bi bi-save-fill" data-bs-toggle="modal" data-bs-target="#login">Modal</button>
+   <div class="modal fade" id="login">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-light">
+                <h2 class="bi bi-person-fill">User Login</h2>
+                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+               
+               <dl>
+                <dt>User Name</dt>
+                <dd><input type="text" class="form-control"/></dd>
+                <dt>Password</dt>
+                <dd><input type="password" class="form-control"/></dd>
+               </dl>
+            </div>
+            <div class="modal-footer">
+                <button data-bs-dismiss="modal" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="mb-4" style="height: 250px; width: 300px;">
+    <div class="carousel slide" id="carouselCard" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image_2.jpg" class="d-block w-50" alt="image1"/>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image_3.jpg" class="d-block w-50" alt="image2"/>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image_4.jpg" class="d-block w-50" alt="image3"/>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image_5.jpg" class="d-block w-50" alt="image3"/>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselCard">
+            <span class="carousel-control-prev-icon bg-black"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselCard">
+            <span class="carousel-control-next-icon bg-black"></span>
+        </button>
+        <div>
+            <button data-bs-slide-to="0" data-bs-target="#carouselCard"></button>
+            <button data-bs-slide-to="1" data-bs-target="#carouselCard"></button>
+            <button data-bs-slide-to="2" data-bs-target="#carouselCard"></button>
+            <button data-bs-slide-to="3" data-bs-target="#carouselCard"></button>
+        </div>
+       </div>
+   </div>
+
+   <div class="">
+    <h3>Collapse</h3>
+    <button class="w-100 mb-3 bg-dark text-light text-start" data-bs-toggle="collapse" data-bs-target="#coll">What is Collapse?</button>
+    <div class="bg-dark text-light mt-1 p-2 collapse" id="coll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste mollitia qui ducimus laborum itaque repellat! Debitis nulla, eos eligendi quidem non dignissimos quod nostrum cum. Enim deleniti obcaecati voluptate.</p>
+    </div>
+    <div class="accordion" id="accord">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-target="#q1" data-bs-toggle="collapse">What is Accordion?</button>
+            </div>
+            <div class="accordion-collapse collapse" id="q1" data-bs-parent="#accord">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam perspiciatis omnis accusantium atque perferendis praesentium eligendi facere assumenda deleniti! Et temporibus obcaecati, similique deserunt facere laborum odit sit! Adipisci?</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" >
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-target="#q2" data-bs-toggle="collapse">What is Accordion-2?</button>
+            </div>
+            <div class="accordion-collapse collapse" id="q2" data-bs-parent="#accord">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptates, eos est nisi aut, labore corrupti quibusdam exercitationem omnis sequi consequuntur. Ducimus quos quia aperiam deleniti labore dolorum ex ipsa.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam perspiciatis omnis accusantium atque perferendis praesentium eligendi facere assumenda deleniti! Et temporibus obcaecati, similique deserunt facere laborum odit sit! Adipisci?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="dropend mt-3" style="height: 200px;">
+    <button class="bi bi-globe dropdown-toggle bg-dark text-light" data-bs-toggle="dropdown">Language</button>
+    <div class="dropdown-menu dropdown-menu-dark">
+        <span class="dropdown-item">English</span>
+        <span class="dropdown-item">తెలుగు</span>
+        <span class="dropdown-item">हिन्दी</span>
+    </div>
+   </div>
+   <h2>Spinners</h2>
+   <div class="spinner-grow text-dark">
+   </div>
+   <div class="spinner-border text-primary"></div>
+   <div class="progress">
+    <div class="progress-bar progress-bar-animated progress-bar-striped" style="width: 30%;">
+        30% completed
+    </div>
+    <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" style="width: 40%;">
+        40% completed
+    </div>
+    <div class="progress-bar bg-info progress-bar-animated progress-bar-striped" style="width: 30%;">
+        30% completed
+    </div>
+   </div>
+   <div>
+    <h2>NavBar</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   </div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

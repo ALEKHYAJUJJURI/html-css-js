@@ -28,13 +28,13 @@ iframe{
     border: 1px solid gray;
     padding: 10px;
 }
-ul{
+.ul{
     background-color: rgba(0,0,0,0.3);
     padding: 10px;
     height: 100vh;
     margin-top: -25px;
 }
-ul li{
+.ul li{
     background-color: aqua;
     margin: 3px;
     text-align: center;
@@ -49,7 +49,7 @@ table{
 
 .img img{
     border:2px solid aqua;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: steps(4);
 }
 .img img:hover{
@@ -107,9 +107,7 @@ table{
     border: 1px dotted hsl(355,30%,70%);
     position: relative;
 }
-.stick{
-    
-}
+
 .stick:first-child{
     color: rgb(0,10,250);
     border: 1px solid red;
@@ -152,4 +150,5 @@ z-index: 2;
 .card-footer{
     font-size: 10px;
 }
+
 
