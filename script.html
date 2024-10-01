@@ -14,9 +14,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body onload="abc()">
-    <div class="m-3">
+    <div class="m-3">   
         <div>
             <img border="3" class="rounded" width="80" height="80"/>
         </div>
@@ -26,6 +27,61 @@
         <form class="mt-2">
             password : <input type="password" placeholder="password"/> <input type="button"/>
         </form>
+        <div class="mt-3">
+            <button onclick="xyz()" class="btn btn-outline-warning">click me</button>
+            <br/>
+            <span class="h4">searching for..</span><h2 id="msg"></h2>
+        </div>
+        <div>
+            <h3>location : <span id="loaction"></span></h3>
+        </div>
+        <div class="">
+            <div>
+                <button class="btn btn-outline-warning" data-bs-target="#login" data-bs-toggle="modal" id="clickBtn">Click</button>
+                <div id="formDis" style="display: none;">
+                    <dl class="row">
+                    <dt class="col-3">User name</dt>
+                    <dd class="col-9" id="uName"></dd>
+                    <dt class="col-3">Password</dt>
+                    <dd class="col-9" id="pWord"></dd>
+                    <dt class="col-3">Gender</dt>
+                    <dd class="col-9" id="gend"></dd>
+                    <dt class="col-3">Stock</dt>
+                    <dd class="col-9" id="stock"></dd>
+                    </dl>
+                    <button class="btn btn-warning bi bi-pen-fill" onclick="" data-bs-toggle="modal" data-bs-target="#login"> Edit</button>
+                </div>
+                <div class="modal fade" id="login">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Login Form</h3>
+                            </div>
+                            <div class="modal-body">
+                            <div class="form d-flex flex-column justify-content-center">
+                                <dl class="">
+                                    <dt>User Name</dt>
+                                    <dd><input type="text" class="form-control" id="userName"/></dd>
+                                    <dt>Password</dt>
+                                    <dd><input type="password" class="form-control" id="password"/></dd>
+                                    <dt>Gender</dt>
+                                    <dd>
+                                        <select class="form-select" id="gender">
+                                            <option>Female</option>
+                                            <option>Male</option>
+                                        </select>
+                                    </dd>
+                                    <dt>Stock</dt>
+                                    <dd><input type="checkbox" id="chkStock"/><label> Available</label></dd>
+                                    <button class="btn btn-primary w-100" onclick="detailsForm()" id="addBtn" data-bs-dismiss="modal"><span class="bi bi-save"></span> Add</button>
+                                </dl>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
