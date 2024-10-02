@@ -8,13 +8,34 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
     crossorigin="anonymous"
   />
-  <script src="script.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Document</title>
-    
+
+    <script type="text/javascript">
+        var msg = "Welcome to JavaScript";
+        document.write(`length : ${msg.length} <br>`);
+        document.write(`charAt : ${msg.charAt(20)} <br>`);
+        document.write(` charCodeAt : ${msg.charCodeAt(3)} is the ascii value of index place <br>`)
+        var val = "alekhya123@gmail.com"
+        document.write(` index of '@' : ${val.indexOf('@')}...  and index of 'z' ${val.indexOf('z')} <br>`);
+        document.write(`subStr : ${val.substr(3)} <br> slice: ${val.slice(3)} <br> subString: ${val.substring(3)} <br>`);
+        document.write(`substr : ${val.substr(3,6)} <br> slice : ${val.slice(3,10)} <br> substring: ${val.substring(3,10)} <br>`);
+        document.write(`user name : ${val.slice(0,val.indexOf('@'))} <br>`)
+        document.write(`domain Name : ${val.substring(val.indexOf('@')+1)} <br>`)
+        document.write(`substring can read backwards : ${val.substring(10,0)}<br>`)
+        let [a,b] = val.split('@')
+        document.write(`id: ${a}<br>`)
+        document.write(`domain : ${b}<br>`)
+        document.write(`split : ${val.split('@')}<br>`)
+        document.write(`startswith : ${val.startsWith('ale')} <br> endswith : ${val.endsWith('.com')}`)
+
+    </script>
+
 </head>
 <body onload="abc()">
     <div class="m-3">   
@@ -81,6 +102,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mt-3">
+            <h5>regular expression</h5>
+            <dl>
+                <dt>password</dt>
+                <dd><input type="text" id="password"  onkeyup="regularFun()"/><br>
+                <span id="pwdError"></span></dd>
+            </dl>
         </div>
     </div>
 </body>

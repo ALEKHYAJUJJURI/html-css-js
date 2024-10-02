@@ -27,3 +27,13 @@ function detailsForm(){
     document.getElementById('addBtn').classList = 'btn btn-warning'
     document.getElementById('clickBtn').style.display = "none"
 }
+function regularFun(){
+    var regExp = /(?=.*[A-Z])\w {4,15}/;
+    var pwdEle = document.getElementById('password').value;
+    var pwdError = document.getElementById('pwdError');
+    if (pwdEle.match(regExp)){
+        pwdError.innerHTML = "strong pwd";
+    }else{
+        pwdError.innerHTML = "week password";
+    }
+}
