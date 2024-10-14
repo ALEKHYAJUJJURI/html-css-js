@@ -22,25 +22,44 @@ function SalutationFun(){
     let hrs = date.getHours();
     let msg = document.getElementById('wish');
     if(hrs>0 && hrs<=12){
-        msg.innerHTML = 
-        
-        `Good Morning <img src="/images/good-mrng.gif" />`;
+        msg.innerHTML = `Good Morning <img src="/images/good-mrng.gif" />`;
+        dateVal.classList = 'class1';
     }else{
         if(hrs>12 && hrs<=17){
             msg.innerHTML=`<img src="/images/200w.gif"/>`;
         }
         else if(hrs>17 && hrs<=22){
-            msg.innerHTML = `Good Evening <img src="/images/sunset.gif"/>`;
+            msg.innerHTML = `<img id='evening' src="/images/sunset.gif"/>`;
+             dateVal.classList = 'class2';
         }
         else{
-            msg.innerHTML = `Good Night <img src="/images/night.gif" />`
+            msg.innerHTML = `<img src="/images/night.gif" />`
+            dateVal.classList = 'class3';
         }
-    }
-   
+   }   
 }
 
 function bodyLoad(){
     SetDAte();
     setInterval(SetTimer,1000);
     SalutationFun();
+    Abc(10)
+    Print();
+}
+
+
+function Abc(a){
+    return a+b(2,5);
+}
+function b(c,d){
+    return c*d
+}
+function Xyz(arr){
+    return arr;
+}
+
+function Print(){
+    Xyz([1,2,3,4,5]).map(function(m){
+        console.log(m)
+    })
 }

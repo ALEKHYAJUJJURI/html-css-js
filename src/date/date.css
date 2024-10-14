@@ -1,0 +1,15 @@
+.body{
+    background-image: radial-gradient(red ,orange,gray 70%);
+    height: 100vh;
+    background-size: cover;
+}
+.class1{
+   
+    color: blue;
+}
+.class2{
+    color: antiquewhite;
+}
+.class3{
+    color: black;
+}
